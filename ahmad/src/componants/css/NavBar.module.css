@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.TheDiv{
+display: inline-flex;
+position: absolute;
+width: 100%;
+gap: 4%;
+}
+.font{
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+    margin-top:10px ;
+    left: 32%;
+    position: relative;
+    color: white;
+}
+.font:hover{
+    color: rgb(206, 206, 171);
+}
+@media (max-width: 480px) {
+    .font{
+        font-size: 9px;
+        left: 0;
+    }
+    .TheDiv{
+        left: 20%;
+    }
+}

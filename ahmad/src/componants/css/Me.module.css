@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kanit&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans+Arabic:wght@100..900&family=Playwrite+IE+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.theDiv{
+    width: 400px;
+    height: 400px;
+    background-color: #5cc860;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    top: 300px;
+    left: 70%;
+}
+.theImg{
+    position: relative;
+    left: 2%;
+    width: 400px;
+}
+.social{
+    width: 20px;
+    position: relative;
+    top: 20%;
+    transition: all 0.3s ease-in-out;
+}
+.socialDiv{
+    height: 30px;
+    position: absolute;
+    gap: 15px;
+    display: inline-flex;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 529px;
+    left: 10%;
+    transition: all 0.3s ease-in-out;
+
+}
+.p1{
+    font-size: 50px;
+    color: azure;
+    font-family: "Kanit", serif;
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    top: -80px;
+    
+}
+.p2{
+    font-size: 50px;
+    color: #4CAF50;
+    font-family: "Kanit", serif;
+    position: relative;
+    top: -210px;
+    left: 10%;  
+    animation-name: ahmad;
+    animation-duration: 2000ms;
+    animation-delay: 0ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+@keyframes ahmad {
+    from{
+        opacity: 0.0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.aboutMe{
+    width: 10%;
+    height: 30px;
+    display: inline;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    border-radius: 30px;
+    box-shadow: 0 0 7px white;
+    position: relative;
+    left: 20%;
+    top: -221px;
+  
+}
+.socialDiv:hover a img{
+    transform: scale(0.9);
+    filter: blur(1.2px);
+}
+.socialDiv a:hover img{
+    z-index: 1;
+    filter: blur(0);
+    transform: scale(1.2);
+}
+.aboutMe:hover{
+    cursor: pointer;
+}
+.AnimateIt{
+    animation: slideIn;
+    animation-duration: 2000ms;
+    animation-delay: 0;
+    background-color: white;
+    width: 120px;
+    animation-iteration-count: 1;
+    height: 124px;
+    overflow: hidden;
+    position:relative;
+    left:10%;
+    top:-200px;
+ padding:5px;
+}
+@keyframes  slideIn{
+    from{
+        opacity: 0;
+        height: 0px;
+    }
+    to{
+        opacity: 1;
+        height: 124px;
+    }
+    
+}
+.DontAnimateIt{
+    overflow: hidden;
+    position:relative;
+    left:10%;
+    top:-200px;
+    animation: slideout;
+    animation-duration: 2000ms;
+    animation-delay: 0;
+    height: 0;
+    animation-iteration-count: 1;
+    background-color: white;
+    width: 120px;
+    padding:0;
+}
+@keyframes slideout {
+    from{
+        height: 124px;
+        opacity: 1;
+        padding: 5px;
+    }
+    to{
+        height: 0px;
+        opacity: 0;
+        padding: 0;
+    }
+}
+@media (max-width :480px) {
+
+    .theDiv{
+        width: 100px;
+        height: 100px;
+        left: 40%;
+        top: 10%;
+    }
+    .theImg{
+        width: 100px;
+
+    }
+    .social{
+       width: 7px;
+       top: -52%;
+    }
+    .socialDiv{
+        height: 10px;
+        gap: 4px;
+        top: 230px;
+        left: 35%;
+   
+    }
+    .aboutMe{
+        width: 45px;
+        height: 10px;
+        font-size: 7px;
+        top: 17px;
+        box-shadow: 0 0 4px white;
+        left: 55%;
+    }
+    .p1{
+        font-size: 15px;
+        top: 70px;
+        left:40%;
+    }
+    .p2{
+        font-size: 15px;
+        top: 30px;
+        left: 40%;
+    }
+
+}
