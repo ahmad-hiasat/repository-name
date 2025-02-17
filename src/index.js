@@ -1,14 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css'; // إذا كان لديك ملف CSS لتنسيق الموقع
-import App from './App'; // الملف الأساسي للمشروع
-
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css"; // إذا كان لديك ملف CSS لتنسيق الموقع
+import App from "./App.jsx"; // الملف الأساسي للمشروع
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // إذا كنت تستخدم reportWebVitals
